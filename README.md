@@ -20,6 +20,13 @@ sudo ./Deploy.sh
 
 🖥️ Parametrer l'ip de serveur Pisignage.
 
+🛠️ Installation du drivers wifi clé usb 
+```
+curl -O https://raw.githubusercontent.com/oxo140/Pisignage-installation-Automatique/main/wifi.sh
+chmod +x wifi.sh
+sudo ./wifi.sh
+```
+
 <div align="center">
 
 
