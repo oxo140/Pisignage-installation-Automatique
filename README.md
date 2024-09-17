@@ -8,9 +8,10 @@
 
 🏗️ Fonction principale : Installation automatique du software Pisignage.
 
-🛠️ Instructions d'installation
+🛠️ Instructions d'installation en tant que su
 
 ```
+sudo apt install curl
 curl -O https://raw.githubusercontent.com/oxo140/Pisignage-installation-Automatique/blob/main/Deploy.sh
 chmod +x Deploy.sh
 sudo ./Deploy.sh
