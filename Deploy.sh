@@ -86,6 +86,29 @@ executer_commandes() {
     # Redémarrer le service dhcpcd
     sudo systemctl restart dhcpcd
 
+    # Changer de répertoire pour /home/$username
+    cd /home/$username
+
+    # Télécharger le fichier depuis PiSignage
+    wget https://pisignage.com/releases/pi-image-p2-v14.zip
+
+    # Décompresser le fichier téléchargé
+    unzip -o pi-image-p2-v14.zip
+
+    # Copier le script d'installation dans le répertoire actuel
+    cp player2/build-scripts/install-pisignage.sh .
+
+    # Rendre les scripts exécutables
+    chmod +x install-pisignage.sh
+    chmod +x -R player2/build-scripts
+    chmod +x -R player2/shell-scripts
+
+    # Exécuter le script d'installation PiSignage
+    ./install-pisignage.sh
+
+    # Lancer le service PiSignage
+    ./start.sh
+
     # Fin
     echo "Toutes les commandes ont été exécutées avec succès pour l'utilisateur $username."
 EOF
