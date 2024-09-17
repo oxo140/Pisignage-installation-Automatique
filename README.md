@@ -11,9 +11,9 @@
 🛠️ Instructions d'installation
 
 ```
-curl -O https://raw.githubusercontent.com/oxo140/Alcasar-Importer-CSV/main/deploy.sh
-chmod +x deploy.sh
-sudo ./deploy.sh
+curl -O https://raw.githubusercontent.com/oxo140/Pisignage-installation-Automatique/blob/main/Deploy.sh
+chmod +x Deploy.sh
+sudo ./Deploy.sh
 ```
 
 🖥️ Accédez à http://localhost:8000
