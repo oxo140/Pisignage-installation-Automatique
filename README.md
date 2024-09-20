@@ -4,11 +4,11 @@
 
 </div>
 
-🧰 Simplifiez l'importation du Software Pisignage sur Debian 11.8
+🧰 Simplifiez l'installation du Software Pisignage sur Debian 11.8
 
 🏗️ Fonction principale : Installation automatique du software Pisignage.
 
-🛠️ Instructions d'installation en tant que su 
+🛠️ Executer les commandes ci-dessous en tant que superutilisateur 
 ```
 sudo apt install curl
 curl -O https://raw.githubusercontent.com/oxo140/Pisignage-installation-Automatique/main/Deploy.sh
