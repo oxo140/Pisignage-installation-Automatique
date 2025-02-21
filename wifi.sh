@@ -51,6 +51,32 @@ modprobe 88x2bu
 # Désactiver la mise en veille et l'écran de veille
 desactiver_veille
 
+# Mettre à jour les dépôts
+echo "Mise à jour des dépôts..."
+sudo apt update
+
+# Installer les prérequis
+echo "Installation des prérequis..."
+sudo apt install -y dkms git build-essential linux-headers-$(uname -r)
+
+# Cloner le dépôt du pilote
+echo "Clonage du dépôt rtl8188eu..."
+git clone https://github.com/lwfinger/rtl8188eu.git
+cd rtl8188eu
+
+# Compiler et installer le module
+echo "Compilation et installation du module..."
+make
+sudo make install
+
+# Charger le module
+echo "Chargement du module..."
+sudo modprobe 8188eu
+
+# Ajouter le module au démarrage
+echo "Ajout du module au démarrage..."
+echo "8188eu" | sudo tee -a /etc/modules
+
 # Redémarrage du système
 echo "Installation réussie. Redémarrage du système..."
 reboot
