@@ -27,6 +27,12 @@ chmod +x wifi.sh
 sudo ./wifi.sh
 ```
 
+🛠️ Installation de l'arret automatique dans le CRONTAB 
+```
+curl -O https://raw.githubusercontent.com/oxo140/Pisignage-installation-Automatique/main/arret.sh
+chmod +x arret.sh
+sudo ./arret.sh
+```
 <div align="center">
 
 
