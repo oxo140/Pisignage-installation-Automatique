@@ -27,11 +27,11 @@ chmod +x wifi.sh
 sudo ./wifi.sh
 ```
 
-🛠️ Installation de l'arret automatique dans le CRONTAB 
+🛠️ Arret automatique dans le CRONTAB 
+Ajouter la commande ci-dessous au crontab
+nano /etc/crontab
 ```
-curl -O https://raw.githubusercontent.com/oxo140/Pisignage-installation-Automatique/main/arret.sh
-chmod +x arret.sh
-sudo ./arret.sh
+0 22     * * *  root    shutdown -h now
 ```
 <div align="center">
 
