@@ -97,6 +97,12 @@ executer_commandes() {
 
     # Copier le script d'installation dans le répertoire actuel
     cp player2/build-scripts/install-pisignage.sh .
+    export DISPLAY=:0
+    export XAUTHORITY=/home/pi/.Xauthority
+    sudo -u pi gsettings set org.gnome.settings-daemon.plugins.power idle-dim false
+    sudo -u pi gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 0
+    sudo -u pi gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-timeout 0
+    sudo -u pi gsettings set org.gnome.desktop.notifications.application:/org/gnome/desktop/notifications/application/gnome-power-manager/ show-banners false
 
     # Rendre les scripts exécutables
     chmod +x install-pisignage.sh
