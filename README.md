@@ -22,6 +22,7 @@ sudo ./Deploy.sh
 
 🛠️ Installation du drivers wifi clé usb 
 ```
+sudo apt install curl
 curl -O https://raw.githubusercontent.com/oxo140/Pisignage-installation-Automatique/main/wifi.sh
 chmod +x wifi.sh
 sudo ./wifi.sh
