@@ -5,7 +5,7 @@ if [ "$EUID" -ne 0 ]; then
     echo "Erreur : Ce script doit être exécuté en tant que root."
     exit 1
 fi
-
+apt install git
 # Fonction pour désactiver la mise en veille et la gestion de l'alimentation
 desactiver_veille() {
     echo "Désactivation de la mise en veille et de la gestion de l'alimentation..."
